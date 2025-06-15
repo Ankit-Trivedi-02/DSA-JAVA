@@ -16,7 +16,7 @@ public class Calculator {
         System.out.print("Enter a number 2 : ");
         int num2 = sc.nextInt();
         System.out.print(
-                "1 : addition\n2 : substraction\n3 : multiplication\n4 : division\n5 : remainder\nEnter your choice : 1");
+                "1 : addition\n2 : substraction\n3 : multiplication\n4 : division\n5 : remainder\nEnter your choice : ");
         int choice = sc.nextInt();
         switch (choice) {
             case 1:
