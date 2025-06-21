@@ -1,3 +1,15 @@
+/* Pattern 4 
+ 
+To draw palindrome pyramid
+
+    1
+   212
+  32123
+ 4321234
+543212345
+
+ */
+
 package Advance_Patterns;
 
 public class Pattern4 {

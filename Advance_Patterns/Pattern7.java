@@ -1,28 +1,33 @@
-/* Pattern 3
+/* Pattern 7
 
-to print this number space number 
+to draw this hollow rhombus 
 
-    1 
-   2 2
-  3 3 3
- 4 4 4 4
-5 5 5 5 5
+    *****
+   *   *
+  *   *
+ *   *
+*****
 
  */
 
 package Advance_Patterns;
 
-public class Pattern3 {
+public class Pattern7 {
     public static void main(String[] args) {
         int r = 5;
         for (int i = 1; i <= r; i++) {
+
             for (int j = 1; j <= r - i; j++) {
                 System.out.print(" ");
             }
-            for (int j = 1; j <= i; j++) {
-                System.out.print(i + " ");
+            for (int j = 1; j <= r; j++) {
+                if(i==1||i==r||j==1||j==r)
+                System.out.print("*");
+                else
+                System.out.print(" ");
             }
             System.out.println();
         }
     }
+
 }
