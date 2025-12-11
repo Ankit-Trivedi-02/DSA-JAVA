@@ -1,3 +1,25 @@
+/*
+
+Write a Java program to detect duplicate parentheses in a given expression.
+A duplicate (or redundant) parenthesis occurs when an expression has unnecessary empty brackets such as:
+
+"((a+b))" → duplicate
+"(a+(b)/c)" → no duplicate
+"(a)" → duplicate
+
+The program should:
+
+Read an expression as input.
+Use a stack to check if any pair of parentheses is redundant.
+If duplicate parentheses are found, print:
+dublicate bracket
+
+If the expression contains no duplicate brackets, print:
+
+Perfect
+
+*/
+
 package Stack;
 
 import java.util.Scanner;

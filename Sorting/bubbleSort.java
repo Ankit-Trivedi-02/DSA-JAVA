@@ -1,3 +1,9 @@
+/*
+
+WAP to sort an array using bubble sort
+
+*/
+
 package Sorting;
 
 import java.util.*;

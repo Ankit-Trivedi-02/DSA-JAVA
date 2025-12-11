@@ -24,46 +24,41 @@ Output:
 
 */
 
+// This is secondary way to do which uses O(n) time complexity
 
 package Stack;
 
 import java.util.Scanner;
 import java.util.Stack;
 
-public class NextGreater {
+public class NextGreaterOn {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int l = sc.nextInt();
 
+        int l = sc.nextInt();
         Stack<Integer> val = new Stack<>();
 
         int[] array = new int[l];
+        int[] answer = new int[l];
 
         for (int i = 0; i < l; i++) {
             array[i] = sc.nextInt();
         }
 
-        for (int i = 0; i < l; i++) {
-            for (int j = i + 1; j < l; j++) {
-                if (array[i] < array[j]) {
-                    val.push(array[j]);
-                    break;
-                }
+        for (int i = l - 1; i >= 0; i--) {
+
+            while (!val.isEmpty() && val.peek() <= array[i]) {
+                val.pop();
             }
-            if (val.size() != i + 1) {
-                val.push(-1);
-            }
+
+            answer[i] = val.isEmpty() ? -1 : val.peek();
+            val.push(array[i]);
         }
 
-        int[] newArray = new int[l];
-
-        for (int i = l-1; i >=0; i--) {
-            newArray[i] = val.pop();
+        for (int x : answer) {
+            System.out.print(x + " ");
         }
 
-        for (int i = 0; i < l; i++) {
-            System.out.print(newArray[i]+" ");
-        }
-
+        sc.close();
     }
 }

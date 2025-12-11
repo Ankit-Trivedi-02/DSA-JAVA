@@ -1,3 +1,23 @@
+/*
+
+Write a Java program to check whether an expression contains balanced brackets.
+The expression may include the following types of brackets:
+
+()
+{}
+[]
+
+The program should read an expression as input and determine whether every opening bracket has a corresponding closing bracket in the correct order.
+If all brackets are balanced, print:
+All Brackets Balanced
+
+Otherwise, print:
+
+No — Something wrong
+
+*/
+
+
 package Stack;
 
 import java.util.Scanner;
